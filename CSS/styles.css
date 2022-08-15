@@ -1,0 +1,27 @@
+:root{
+    --brand-background: #F5F5F5;
+    --brand-font: ;
+}
+/* Головний колір фону
+#F5F5F5 -1 чим займаємось, друга стор.осн.бл
+#FFFFFF- хедери 
+#F5F4FA -наша команда
+#2F303A-футери та перш.стор.осн.бл*/
+
+body{
+color: #757575;
+;
+font-family: 'Roboto',sans-serif ;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+.btn, .list-btn{
+    cursor: pointer;
+}
