@@ -2,12 +2,13 @@
     --brand-background: #F5F5F5;
     --dark-background: #2F303A;
     --color-button: #2196F3;
-    
-    --main-font-size: 16px;
-
+    --main-color-link: #757575;
     --main-text-color: #212121;
     --second-text-color: #FFFFFF;
-        
+    --main-font-size: 14px;
+    --second-font-size: 16px;
+
+   
     --brand-weight: 700;
     --second-weigh: 500;
 
@@ -18,23 +19,21 @@
 }
 
 body{
-color: #757575;
+color: var(--main-color-link);
 font-family: 'Roboto', 'Raleway',sans-serif ;
+letter-spacing: var(--brand-spacing);
+font-size: var(--main-font-size);
+background-color: var(--second-text-color);
 }
 .link{
 text-decoration: none;
-color: #757575;
+color: inherit;
 }
 .list{
 list-style: none;
 }
-
 .header {
 background-color: var(--second-text-color);
-color: var(--main-text-color);
-font-weight: var(--second-weigh);
-font-size: var(--main-font-size);
-letter-spacing: 0.02em;
 }
 .logo{
 font-family: 'Raleway';
@@ -49,51 +48,58 @@ color: #000000;
 .head-logo{
 color: var(--color-button);
 }
+
+.nav-link,
+.auth-link{
+font-family:'Roboto';
+font-weight: var(--second-weigh);
+font-size: var(--main-font-size);
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+.nav-link:hover,
+.nav-link:focus,
+.auth-link:hover,
+.auth-link:focus{
+color: var(--color-button);
+}
+
 .current{
 color: var(--color-button) ;
 }
-.list .mail{
-color: var(--color-button);
-}
-.list-item>h3{
-width: var(--brand-weight);
-height: 1.14;
-letter-spacing: var(--brand-spacing);
-text-transform: uppercase;
-color: var(--main-text-color);
-}
-.list-item p{
-line-height: 1.71;
-letter-spacing: var(--brand-spacing);
-color: #757575;
-}
-.tital {
+
+.main-tital{
 background-color: var(--dark-background);
 }
-.tital-subject {
+
+.tital-subject{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: var(--main-align);
-
-letter-spacing: var(--second-spacing) ;
+letter-spacing: var(--second-spacing);
 text-transform: uppercase;
-
-color: var(--second-text-color);
+color: var(--second-text-color); 
 }
-.tital>.btn{
+
+
+.main-tital>.btn{
 background-color: var(--color-button);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 color:var(--second-text-color);
-display: flex;
+
 align-items: var(--main-align);
 text-align: var(--main-align);
 font-weight: var(--brand-weight);
-font-size: var(--main-font-size);
+font-size: var(--second-font-size);
 line-height: 1.88;
 letter-spacing: var(--second-spacing);
 }
+.main-tital>.btn:hover{
+color: var(--main-color-link);;
+}
+
 .visually-hidden {
 position: absolute;
 white-space: nowrap;
@@ -106,12 +112,24 @@ clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
 }
-.title-about{
-background-color: var(--brand-background);
+
+.list-item{
+font-weight: var(--brand-weight);
+font-size: var(--main-font-size);
+line-height: 1.14;
+letter-spacing: var(--brand-spacing);
+text-transform: uppercase;
+color: var(--main-text-color);
 }
-.tital-team{
-background-color: #F5F4FA;
+.list-item>p{
+font-weight:400;
+font-size:var(--second-font-size);
+line-height: 1.71;
+letter-spacing: var(--brand-spacing);
+color: var(--main-color-link);
+text-transform: none;
 }
+
 .subtital{
 width: var(--brand-weight);
 font-size: 36px;
@@ -120,43 +138,41 @@ text-align: var(--main-align);
 letter-spacing: var(--brand-spacing);
 color: var(--main-text-color);
 }
-.main-area{
-background-color: var(--brand-background);
-}
-.filter{
-text-align: var(--main-align);
-background-color: #F5F4FA;
-} 
 .list-btn,
 .subtital-name-tital{
 letter-spacing: var(--brand-spacing);
-font-size: (--main-font-size);
+font-size: var(--second-font-size);
 color: var(--main-text-color);
 font-weight: var(--second-weigh);
 }
 .filter .list-btn{
 line-height: 1.62;
 }
+.list-btn{
+background-color: #F5F4FA;
+border: 0em;
+}
 .subtital-name-tital{
-height: 1.19;
+line-height: 1.19;
 text-align: var(--main-align);
 }
 .list-tital{
 width: var(--brand-weight);
 font-size: 18px;
-height: 2.0;
+line-height: 2.0;
 letter-spacing: var(--second-spacing);
 color: var(--main-text-color);
 }
-.branch,.list-tital>p{
-font-size: var(--main-font-size);
+.branch,.type{
+font-size: var(--second-font-size);
 letter-spacing: var(--brand-spacing);
-color: #757575;
+color: var(--main-color-link);
 }
 .branch{
-height: 1.88;
+line-height: 1.88;
 text-align: var(--main-align);
 }
+
 .footer {
 background-color: var(--dark-background);
 width: 1600px;
@@ -176,6 +192,10 @@ letter-spacing: var(--brand-spacing);
 font-style: inherit;
 color: rgba(255, 255, 255, 0.6);
 }
+.footer-address .link:hover,
+.footer-address .link:focus{
+color: var(--color-button);
+}
 .footer-address .address{
 color: var(--second-text-color);
 }
@@ -184,10 +204,7 @@ color: var(--second-text-color);
 background-color: var(--color-button);
 color: var(--main-text-color);
 }
-.link:focus,
-.link:hover{
-color: var(--color-button);
-}
+
 .list-btn:hover,
 .list-btn:focus{
 background-color: var(--color-button);
