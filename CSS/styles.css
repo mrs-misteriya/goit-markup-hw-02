@@ -96,8 +96,11 @@ font-size: var(--second-font-size);
 line-height: 1.88;
 letter-spacing: var(--second-spacing);
 }
+.main-tital>.btn{
+border-color: var(--color-button);
+}
 .main-tital>.btn:hover{
-color: var(--main-color-link);;
+color: var(--main-color-link);
 }
 
 .visually-hidden {
