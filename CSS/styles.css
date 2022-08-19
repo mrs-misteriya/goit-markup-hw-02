@@ -25,10 +25,7 @@ letter-spacing: var(--brand-spacing);
 font-size: var(--main-font-size);
 background-color: var(--second-text-color);
 }
-.link{
-text-decoration: none;
-color: inherit;
-}
+
 .list{
 list-style: none;
 }
@@ -41,6 +38,7 @@ font-weight: var(--brand-weight);
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: var(--brand-spacing);
+text-decoration: none;
 }
 .header .logo {
 color: #000000;
@@ -57,16 +55,16 @@ font-size: var(--main-font-size);
 line-height: 1.17;
 letter-spacing: 0.02em;
 color: var(--main-text-color);
+text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus,
 .auth-link:hover,
 .auth-link:focus{
-color: var(--color-button);
+color: #188CE8;
 }
-
 .current{
-color: var(--color-button) ;
+color:#188CE8;
 }
 
 .main-tital{
@@ -100,7 +98,7 @@ letter-spacing: var(--second-spacing);
 border-color: var(--color-button);
 }
 .main-tital>.btn:hover{
-color: var(--main-color-link);
+color: #188CE8;
 }
 
 .visually-hidden {
@@ -123,6 +121,7 @@ line-height: 1.14;
 letter-spacing: var(--brand-spacing);
 text-transform: uppercase;
 color: var(--main-text-color);
+font-family: 'Roboto', 'Raleway',sans-serif ;
 }
 .list-item>p{
 font-weight:400;
@@ -140,6 +139,7 @@ height: 1.17;
 text-align: var(--main-align);
 letter-spacing: var(--brand-spacing);
 color: var(--main-text-color);
+font-family: 'Roboto', 'Raleway',sans-serif ;
 }
 .list-btn,
 .subtital-name-tital{
@@ -147,6 +147,7 @@ letter-spacing: var(--brand-spacing);
 font-size: var(--second-font-size);
 color: var(--main-text-color);
 font-weight: var(--second-weigh);
+font-family: 'Roboto', sans-serif;
 }
 .filter .list-btn{
 line-height: 1.62;
@@ -162,9 +163,13 @@ text-align: var(--main-align);
 .list-tital{
 width: var(--brand-weight);
 font-size: 18px;
-line-height: 2.0;
+line-height: 2;
 letter-spacing: var(--second-spacing);
 color: var(--main-text-color);
+font-family: 'Roboto', 'Raleway',sans-serif ;
+}
+.list .link{
+text-decoration: none;
 }
 .branch,.type{
 font-size: var(--second-font-size);
@@ -178,8 +183,6 @@ text-align: var(--main-align);
 
 .footer {
 background-color: var(--dark-background);
-width: 1600px;
-height: 252px;
 }
 .footer>.logo{
 color:var(--second-text-color);
@@ -195,9 +198,13 @@ letter-spacing: var(--brand-spacing);
 font-style: inherit;
 color: rgba(255, 255, 255, 0.6);
 }
+.footer-address .link{
+text-decoration: none;
+color: inherit;
+}
 .footer-address .link:hover,
 .footer-address .link:focus{
-color: var(--color-button);
+color: #188CE8;
 }
 .footer-address .address{
 color: var(--second-text-color);
@@ -205,7 +212,7 @@ color: var(--second-text-color);
 .btn:focus,
 .btn:hover{
 background-color: var(--color-button);
-color: var(--main-text-color);
+color: #188CE8;
 }
 
 .list-btn:hover,
